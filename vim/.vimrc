@@ -26,6 +26,7 @@ set incsearch
 set list
 set listchars=tab:>.,trail:.,extends:#,nbsp:.
 
+set nopaste
 set comments+=f://
 set backspace=indent,eol,start
 set cscopeprg=/usr/bin/cscope
@@ -58,7 +59,7 @@ let Tlist_Show_One_File=1
 
 " I've got a azerty keybord, <Leader> was set to "\" that's not nice on that
 " kind of keyboard. So i remap this to ","
-let mapleader=","
+let mapleader="`"
 
 map  NewKey   <Plug>ShowFunc  
 map! NewKey   <Plug>ShowFunc 
@@ -89,7 +90,8 @@ let mapleader="@"
 let g:phpqa_codesniffer_autorun = 0
 let g:phpqa_messdetector_autorun = 0
 
-let g:syntastic_phpcs_conf=" --standard=Drupal --extensions=php,module,inc,install,test,profile,theme"
+" let g:syntastic_phpcs_conf=" --standard=Magento --extensions=php,module,inc,install,test,profile,theme"
 
 set colorcolumn=80
 filetype plugin indent on     " required!
+set tags=./tags,tags;$HOME
