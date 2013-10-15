@@ -5,7 +5,6 @@ set nocompatible               " be iMproved
 filetype off                   " required!
 
 set rtp+=~/.vim/bundle/vundle/
-call vundle#rc()
 call pathogen#infect()
 
 if &cp | set nocp | endif
